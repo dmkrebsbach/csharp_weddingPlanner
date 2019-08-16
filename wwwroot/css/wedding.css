@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+body{
+    margin: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+.container{
+    margin: 50px;
+    display: flex;
+    width: 100%;
+}
+
+h1 {
+    display: block;
+    margin: 20px auto;
+    color: navy;
+    text-align: center;
+    width: 100%;
+}
+
+h4 {
+    display: block;
+    padding: 10px 0px;
+    margin: 20px auto;
+    color: navy;
+    text-align: center;
+    width: 100%;
+    border-bottom: 2px solid black; 
+}
+
+h3 {
+    display: block;
+    padding: 10px 0px;
+    margin: 20px auto;
+    color: navy;
+    text-align: center;
+    width: 100%;
+}
+
+h3 a {
+    text-decoration: none;
+    outline: 1px solid rgb(92, 88, 88);
+    background-color: rgb(92, 88, 88);
+    padding: 5px;
+    color: rgb(236, 216, 216);
+}
+
+.weddingTable {
+    display: block;
+    margin: 20px auto;
+}
+
+p {
+    margin: 5px auto;
+    text-align: center;
+}

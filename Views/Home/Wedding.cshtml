@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Wedding Planner! Wedding Info</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="~/css/wedding.css">
+	</head>
+    <body>
+        @model Wedding
+        <div class="header">
+            <h1>Details for @Model.PartnerOne & @Model.PartnerTwo's Wedding!</h1>
+            <h4><a href="/dashboard">Dashboard </a> ||| <a href="/logout"> Logout</a></h4>
+        </div>
+        <div class="weddingTable">
+            <h3>Wedding Date: @Model.Date.ToString("MMM d, yyy")</h3>
+            <h3>Wedding Address: @Model.Address</h3>
+            <h3>Current Guest List:</h3>
+            @foreach(var ug in Model.UserWeddings)
+            {
+                <p>@ug.User.FirstName @ug.User.LastName</p>
+            }
+            
+            
+        
+                
+            
+        </div>
+    </body>
+    </html>

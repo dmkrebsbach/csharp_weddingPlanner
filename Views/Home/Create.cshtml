@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Wedding Planner! Add Wedding</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="~/css/create.css">
+	</head>
+    <body>
+        <div class="header">
+            <h1>Add Your Wedding To The Calendar</h1>
+            <h4><a href="/dashboard">Dashboard </a> ||| <a href="/logout"> Logout</a></h4>
+        </div>
+        @model CreateViewModel
+        <div class = "createBox">
+            <h1>Wedding Details:</h1>
+            <form asp-action="CreateWedding" asp-controller="Home" method="post">
+                <label asp-for="newWedding.PartnerOne">Partner One (First Name): </label>
+                <input asp-for="newWedding.PartnerOne"><br>
+                <label asp-for="newWedding.PartnerTwo">Partner Two (First Name): </label>
+                <input asp-for="newWedding.PartnerTwo"><br>
+                <label asp-for="newWedding.Date">Ceremony Date: </label>
+                <input type="date" asp-for="newWedding.Date"><br>
+                <label asp-for="newWedding.Address">Ceremony Address: </label>
+                <input asp-for="newWedding.Address"><br>
+                <input value="Add Your Wedding!" class = "btn" type="submit">
+            </form>
+        </div>
+        
+    </body>
+    </html>
